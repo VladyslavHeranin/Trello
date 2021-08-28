@@ -1,0 +1,8 @@
+{
+    "port": 5000,
+    "url": "mongodb+srv://vladislav:plkiu123@cluster.81c1e.mongodb.net/Cluster",
+    "key": "user-key-manager"
+}
+
+
+
