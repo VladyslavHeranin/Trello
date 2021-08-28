@@ -22,6 +22,7 @@ export const Trello = (props) => {
 
   const dragStartHendler = (e, list , item) => {
         setItemControler(item) 
+        dispatch(delItem(item._id))
     }
 
     const dragLeaveHendler = (e) => {
@@ -36,7 +37,7 @@ export const Trello = (props) => {
 
     const dragOnDroprHendler = (e, list) => {
         e.preventDefault()
-           dispatch(delItem(itemControler._id))
+
         if(itemControler.name !== ""){
              dispatch(createItem(list, currentUser.id, itemControler.name))
         }
